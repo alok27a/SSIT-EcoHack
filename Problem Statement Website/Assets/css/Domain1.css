@@ -1,0 +1,79 @@
+:root {
+  --primary: #000100;
+  --box: #1b1b1b;
+  --green: #2ba837;
+  --light: white;
+}
+
+.navbar {
+  box-sizing: border-box;
+  padding: 0;
+  background-color: var(--primary);
+  height: 15vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  box-sizing: border-box;
+  height: 14vh;
+  display: block;
+  margin: auto;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--primary);
+  font-family: "Open Sans", sans-serif;
+}
+
+.title {
+  color: var(--green);
+  margin: 20px;
+  font-size: 1.6rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.card {
+  min-height: 25vh;
+  background: var(--box);
+  padding: 30px;
+  box-sizing: border-box;
+  color: var(--light);
+  margin: 20px;
+  box-shadow: 0px 2px 18px -4px rgba(0, 0, 0, 0.75);
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.card:hover {
+  background: var(--green);
+  color: var(--light);
+}
+.card-title {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: var(--green);
+}
+.card-content {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0 4%;
+  }
+}
